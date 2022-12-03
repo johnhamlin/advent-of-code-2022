@@ -20,8 +20,6 @@ function prioritize(char) {
   if (char.match(/[A-Z]/)) return char.charCodeAt(0) - upperCaseOffset;
 }
 
-console.log(matches);
-
 const sum = matches.reduce((sum, match) => sum + prioritize(match), 0);
 console.log('Part I:', sum);
 
